@@ -21,7 +21,7 @@ let array4 = array1.concat(array2, array3);
 console.log(array4);
 
 
-//Metodo 02: .join()
+//Metodo 02: .join()Amanda Gomes Mechi
 //O método join() é usado para criar uma string a partir dos elementos de um array.
 //O método join() junta os elementos do array em uma única string, separando cada elemento com um separador especificado.
 
@@ -55,3 +55,22 @@ console.log(equipe.slice(1));
 
 //Resultado esperado: Array['a', 'b', 'c']
 console.log(array1.slice(0, 3));
+
+
+//Método 04: .reverse()
+//O método .reverse() inverte um array no lugar e retorna a referência ao mesmo array.
+//O primeiro elemento do array agora se tornando o último, e o último elemento do array se tornando o primeiro.
+
+//Sintaxe:
+//reverse()
+
+//Testes práticos:
+console.log("Testes práticos: .reverse()");
+
+let numeros = [1, 2, 3, 4];
+console.log(numeros)
+console.log(numeros.reverse());
+
+let ordem = ['primeiro', 'segundo', 'terceiro'];
+console.log(ordem);
+console.log (ordem.reverse());
