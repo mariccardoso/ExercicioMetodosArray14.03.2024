@@ -143,3 +143,22 @@ let resultado1 = array6.find((element) => element < 130);
 console.log(resultado1);
 //A função passada para o método find verifica se o elemento é menor do que 130: (element) => element < 130
 //Se encontrar um elemento que atenda a essa condição, ele será atribuído à variável "resultado1"
+
+
+//Método 08: indexOf()
+//O método indexOf retorna o índice do elemento fornecido na matriz se for encontrado e retorna -1 se não for encontrado.
+
+//Sintaxe:
+//array.indexOf(elementoDePesquisa, [pontoInicial = 0])
+//elementoDePesquisa: Elemento a ser pesquisado no array.
+//pontoInicial: O índice para iniciar a procura.
+
+//Testes práticos:
+console.log("Testes práticos: indexOf()");
+
+let dezenas = [10, 20, 30, 40, 50];
+let result = dezenas.indexOf(30);
+console.log(result); // 2
+
+let result1 = dezenas.indexOf(50);
+console.log(result1); //4
