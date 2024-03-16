@@ -162,3 +162,26 @@ console.log(result); // 2
 
 let result1 = dezenas.indexOf(50);
 console.log(result1); //4
+
+
+//Método 09: filter()
+//O método filter verifica cada elemento na matriz em relação à condição na função passada e retorna apenas os elementos que atendem a essa condição.
+
+//Sintaxe:
+//newArray = arr.filter(callback[, thisArg])
+//callback: Função é um predicado, para testar cada elemento do array. Retorna true para manter o elemento, false caso contrário.
+//thisArg (Opcional): Valor a ser usado como this durante a execução do callback.
+
+//Testes práticos:
+console.log("Testes práticos: filter()");
+
+let todosnum = [1, 2, 3, 4, 5, 6];
+let pares = todosnum.filter((element) => element % 2 === 0);
+    //Se o elemento for par (o resto da divisão por 2 é igual a 0) ele será incluído no novo array que será armazenado na variável "pares".
+console.log(pares)
+
+let impares = todosnum.filter((element) => element % 2 != 0);
+    //Se o elemento for ímpar (o resto da divisão por 2 é diferente de 0) ele será incluído no novo array que será armazenado na variável "ímpares".
+console.log(impares)
+
+
