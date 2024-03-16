@@ -21,7 +21,7 @@ let array4 = array1.concat(array2, array3);
 console.log(array4);
 
 
-//Metodo 02: .join()Amanda Gomes Mechi
+//Metodo 02: .join()
 //O método join() é usado para criar uma string a partir dos elementos de um array.
 //O método join() junta os elementos do array em uma única string, separando cada elemento com um separador especificado.
 
@@ -73,4 +73,22 @@ console.log(numeros.reverse());
 
 let ordem = ['primeiro', 'segundo', 'terceiro'];
 console.log(ordem);
-console.log (ordem.reverse());
+console.log(ordem.reverse());
+
+
+//Método 05: .includes()  
+//O método includes() determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+
+//Sintaxe
+//array.includes(searchElement[, fromIndex])
+//SearchElement:O elemento a buscar
+//fromIndex: Opcional. A posição no array de onde a busca pelo searchElement se iniciará.
+
+//Testes práticos:
+console.log("Testes práticos: .includes()");
+
+let cidades = ["Rio de Janeiro", "São Paulo", "Campinas", "Valinhos"]
+console.log(cidades.includes("São Paulo"));
+//Retorna "true", pois a string "São Paulo" está dentro do array "cidades"
+console.log(cidades.includes("Banana"));
+//Retorna "false", pois a string "Banana" não faz parte do array "cidades"
