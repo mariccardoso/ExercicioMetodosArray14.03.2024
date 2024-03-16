@@ -111,3 +111,35 @@ console.log(array5.sort());
 let frutas = ["caju", "amora", "banana"];
 console.log(frutas.sort());
 //Resultado esperado: Frutas ordenadas em ordem alfabetica pelo Unicode
+
+
+//Método 07: .find()
+//O find() retorna o primeiro elemento na matriz fornecida que satisfaz a função de teste fornecida.
+
+//Sintaxe:
+//find(callbackFn)
+//find(callbackFn, thisArg)
+//callbackFn: Uma função a ser executada para cada elemento da matriz.
+//thisArg(opcional): Um valor a ser usado ao executar callbackFn.
+
+//Funções
+//Uma função é um conjunto de instruções que executa uma tarefa ou calcula um valor. 
+//A definição da função (também chamada de declaração de função) consiste no uso da palavra chave function seguida por:
+//Nome da Função.
+//Lista de argumentos para a função, entre parênteses e separados por vírgulas.
+//Declarações JavaScript que definem a função, entre chaves
+
+//Testes práticos:
+console.log("Testes práticos: .find()");
+
+let array6 = [5, 12, 8, 130, 44];
+
+let resultado = array6.find((element) => element > 10);
+console.log(resultado);
+//A função passada para o método find verifica se o elemento é maior do que 10: (element) => element > 10
+//Se encontrar um elemento que atenda a essa condição, ele será atribuído à variável "resultado"
+
+let resultado1 = array6.find((element) => element < 130);
+console.log(resultado1);
+//A função passada para o método find verifica se o elemento é menor do que 130: (element) => element < 130
+//Se encontrar um elemento que atenda a essa condição, ele será atribuído à variável "resultado1"
