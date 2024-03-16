@@ -12,7 +12,7 @@ let array2 = ['x', 'y', 'z'];
 
 
 //Testes práticos:
-console.log("Testes práticos: .concat")
+console.log("Testes práticos: .concat");
 
 let array3 = array1.concat(array2);
 console.log(array3);
@@ -30,14 +30,14 @@ console.log(array4);
 //join(separador)
 
 //Testes práticos:
-console.log("Testes práticos: .join()")
-let equipe = ['Júlia', 'Vinicius', 'Fernanda', 'Rayssa', 'Mariana']
+console.log("Testes práticos: .join()");
+let equipe = ['Júlia', 'Vinicius', 'Fernanda', 'Rayssa', 'Mariana'];
 
 //Mostrar os elementos da seguinte forma: Júlia,Vinicius,Fernanada,Rayssa,Mariana
 console.log(equipe.join());
 
 //Separar os elementos da seguinte forma: Júlia-Vinicius-Fernanada-Rayssa-Mariana
-console.log(equipe.join('-'))
+console.log(equipe.join('-'));
 
 
 //Metodo 03: .slice()
@@ -48,7 +48,7 @@ console.log(equipe.join('-'))
 //slice(start, end)
 
 //Testes Práticos: 
-console.log("Testes práticos: .slice()")
+console.log("Testes práticos: .slice()");
 
 //Resultado esperado: Array ['Vinicius', 'Fernanda', 'Rayssa', 'Mariana']
 console.log(equipe.slice(1));
@@ -87,8 +87,27 @@ console.log(ordem.reverse());
 //Testes práticos:
 console.log("Testes práticos: .includes()");
 
-let cidades = ["Rio de Janeiro", "São Paulo", "Campinas", "Valinhos"]
+let cidades = ["Rio de Janeiro", "São Paulo", "Campinas", "Valinhos"];
 console.log(cidades.includes("São Paulo"));
 //Retorna "true", pois a string "São Paulo" está dentro do array "cidades"
 console.log(cidades.includes("Banana"));
 //Retorna "false", pois a string "Banana" não faz parte do array "cidades"
+
+
+//Método 06: .sort()
+//O método sort classifica os elementos do array em ordem crescente por padrão.
+
+//Sintaxe:
+//arr.sort(funcaoDeComparacao)
+//funcaoDeComparação(opcional): Especifica uma função que define a ordenação. Se omitido, o array é ordenado de acordo com a pontuação de código Unicode
+
+//Testes práticos:
+console.log("Testes práticos: .sort()");
+
+let array5 = [2, 3, 5, 1, 4];
+console.log(array5.sort());
+//Resultado esperado: números ordenados em ordem crescente pelo Unicode
+
+let frutas = ["caju", "amora", "banana"];
+console.log(frutas.sort());
+//Resultado esperado: Frutas ordenadas em ordem alfabetica pelo Unicode
