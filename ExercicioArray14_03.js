@@ -177,11 +177,32 @@ console.log("Testes práticos: filter()");
 
 let todosnum = [1, 2, 3, 4, 5, 6];
 let pares = todosnum.filter((element) => element % 2 === 0);
-    //Se o elemento for par (o resto da divisão por 2 é igual a 0) ele será incluído no novo array que será armazenado na variável "pares".
-console.log(pares)
+//Se o elemento for par (o resto da divisão por 2 é igual a 0) ele será incluído no novo array que será armazenado na variável "pares".
+console.log(pares);
 
 let impares = todosnum.filter((element) => element % 2 != 0);
-    //Se o elemento for ímpar (o resto da divisão por 2 é diferente de 0) ele será incluído no novo array que será armazenado na variável "ímpares".
-console.log(impares)
+//Se o elemento for ímpar (o resto da divisão por 2 é diferente de 0) ele será incluído no novo array que será armazenado na variável "ímpares".
+console.log(impares);
 
+
+//Método 10: map()
+//O método map pega um elemento individual da matriz fornecida e altera seu valor de acordo com a função passada, 
+//então retorna uma nova matriz com esses valores modificados.
+
+//Sintaxe:
+//arr.map(callback[, thisArg])
+//callback: Função cujo retorno produz o elemento do novo Array
+//thisArg: Opcional. Valor a ser utilizado como o this no momento da execução da função callback.
+
+//Testes práticos:
+console.log("Testes práticos: map()");
+
+//Math.sqrt: A função Math.sqrt() retorna a raiz quadrada de um número. 
+let radicandos = [4, 9, 16, 25];
+let raizes = radicandos.map(Math.sqrt);
+console.log(raizes);
+
+// (e) => e ** 2: O operador de exponenciação (**) retorna o resultado de elevar o primeiro operando à potência do segundo operando.
+let potencias = numeros.map((e) => e ** 2);
+console.log(potencias);
 
