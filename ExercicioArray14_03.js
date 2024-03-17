@@ -216,7 +216,7 @@ console.log(potencias);
 //array.splice(indice[, deleteCount[, elemento1[, ...[, elementoN]]])
 //indice: Índice o qual deve iniciar a alterar a lista.
 //deleteCount: Um inteiro indicando o número de antigos elementos que devem ser removidos.
-    //Se deleteCount é 0, nenhum elemento é removido.
+//Se deleteCount é 0, nenhum elemento é removido.
 //elemento1, ..., elementoN: Os elementos a adicionar na lista.
 
 //Testes Práticos:
