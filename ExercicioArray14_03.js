@@ -206,3 +206,32 @@ console.log(raizes);
 let potencias = numeros.map((e) => e ** 2);
 console.log(potencias);
 
+
+
+//SPLICE ()
+
+//O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+
+//Sintaxe:
+//array.splice(indice[, deleteCount[, elemento1[, ...[, elementoN]]])
+//indice: Índice o qual deve iniciar a alterar a lista.
+//deleteCount: Um inteiro indicando o número de antigos elementos que devem ser removidos.
+    //Se deleteCount é 0, nenhum elemento é removido.
+//elemento1, ..., elementoN: Os elementos a adicionar na lista.
+
+//Testes Práticos:
+console.log("Testes práticos: SPLICE");
+
+let mariana = ['feia', 'linda', 'cheirosa', 'carismatica', 'inteligente'];
+
+//Exemplo removendo
+mariana.splice(0, 1);// Remove o primeiro elemento: "feia"
+console.log(mariana);
+
+//Exemplo adicionando
+mariana.splice(1, 0, 'perfeita'); // Adiciona o elemento "perfeita" no índice 1
+console.log(mariana);
+
+//Exemplo Substituindo
+mariana.splice(4, 1, 'talentosa'); // Substituí o elemento do índice 4 por "talentosa"
+console.log(mariana);
